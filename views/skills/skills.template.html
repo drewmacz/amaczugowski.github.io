@@ -4,7 +4,7 @@
             <!-- Header and Search Box -->
             <div class="row">
                 <div class="col s12 m9">
-                    <h1 class="header center-on-small-only">Skills</h1>
+                    <h1 class="header center-on-small-only light">Skills</h1>
                     <div class="input-field">
                         <input id="searchBox" type="text" ng-model="searchText">
                         <label for="searchBox">search for skills</label>
@@ -13,9 +13,9 @@
             </div>
 
             <!-- Page Body -->
-            <div class="row">
+            <div class="row" ng-show="hasMatches(languages)">
                 <div class="col s12 m9">
-                    <h3>Languages</h3>
+                    <h3 class="light blue-grey-text">Languages</h3>
                 </div>
             </div>
             <div class="row">
@@ -30,9 +30,9 @@
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row" ng-show="hasMatches(frameworks)">
                 <div class="col s12 m9">
-                    <h3>Frameworks</h3>
+                    <h3 class="light blue-grey-text">Frameworks</h3>
                 </div>
             </div>
             <div class="row">
@@ -47,9 +47,9 @@
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row" ng-show="hasMatches(tools)">
                 <div class="col s12 m9">
-                    <h3>Tools</h3>
+                    <h3 class="light blue-grey-text">Tools</h3>
                 </div>
             </div>
             <div class="row">
@@ -64,13 +64,13 @@
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row" ng-show="hasMatches(oss)">
                 <div class="col s12 m9">
-                    <h3>Operating Systems</h3>
+                    <h3 class="light blue-grey-text">Operating Systems</h3>
                 </div>
             </div>
             <div class="row">
-                <div ng-repeat="item in os | filter:searchText">
+                <div ng-repeat="item in oss | filter:searchText">
                     <div class="col s12 m3">
                         <div class="card red lighten-2">
                             <div class="card-content white-text">
@@ -81,9 +81,9 @@
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row" ng-show="hasMatches(skills)">
                 <div class="col s12 m9">
-                    <h3>Skills</h3>
+                    <h3 class="light blue-grey-text">Technical Skills</h3>
                 </div>
             </div>
             <div class="row">

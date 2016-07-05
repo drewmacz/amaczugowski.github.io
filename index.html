@@ -12,11 +12,12 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>My AngularJS App</title>
+    <title>Andrew Maczugowski</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Styling -->
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
     <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
     <link rel="stylesheet" href="css/app.css">
@@ -48,9 +49,9 @@
         <div class="nav-wrapper">
             <a href="#" class="brand-logo">Andrew Maczugowski</a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li ng-class="{active:shared.about}"><a href="#!/about">About</a></li>
-                <li ng-class="{active:shared.skills}"><a href="#!/skills">Skills</a></li>
-                <!--<li><a href="#!/portfolio">Portfolio</a></li>-->
+                <li ng-class="{active:shared.about}"><a href="#!/about">about</a></li>
+                <li ng-class="{active:shared.skills}"><a href="#!/skills">skills</a></li>
+                <!--<li><a href="#!/portfolio">portfolio</a></li>-->
                 <li><a ng-click="shared.go('#!/contact')" class="waves-effect waves-light btn-large">Contact</a></li>
             </ul>
         </div>
@@ -63,6 +64,7 @@
 <![endif]-->
 
 <div ng-view></div>
+
 
 </body>
 </html>
