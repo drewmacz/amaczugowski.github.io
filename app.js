@@ -15,19 +15,20 @@ app.config(['$locationProvider', '$routeProvider', function ($locationProvider, 
 
     $routeProvider
         .when('/main', {
-            template: '<main></main>'
+            templateUrl: 'views/main/main.template.html',
+            controller: 'mainCtrl'
         })
         .when('/about', {
-            template: '<about></about>'
+            templateUrl: 'views/about/about.template.html',
+            controller: 'aboutCtrl'
         })
         .when('/skills', {
-            template: '<skills></skills>'
-        })
-        .when('/portfolio', {
-            template: '<portfolio></portfolio>'
+            templateUrl: 'views/skills/skills.template.html',
+            controller: 'skillsCtrl'
         })
         .when('/contact', {
-            template: '<contact></contact>'
+            templateUrl: 'views/contact/contact.template.html',
+            controller: 'contactCtrl'
         })
         .otherwise('/main');
 }]);

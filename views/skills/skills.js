@@ -3,11 +3,6 @@
 // Create the skills module
 var app = angular.module('skills', ['myApp']);
 
-// Define the view to associate with this module
-app.component('skills', {
-    templateUrl: 'views/skills/skills.template.html'
-});
-
 // Controller for the skills view
 app.controller('skillsCtrl', function($scope, shared) {
     $scope.searchText = '';
