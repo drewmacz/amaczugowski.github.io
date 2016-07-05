@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My AngularJS App</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Styling -->
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!-- Google icon font -->
+    <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection"/>
+    <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+
+    <!-- Page Scripts -->
+    <!-- In production use:
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+    -->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/vendor/materialize.js"></script>
+    <script src="app.js"></script>
+    <script src="js/services/shared.js"></script>
+    <script src="views/main/main.js"></script>
+    <script src="views/about/about.js"></script>
+    <script src="views/skills/skills.js"></script>
+    <script src="views/contact/contact.js"></script>
+</head>
+
+
+<body class="grey lighten-3">
+<!-- Nav Bar for the website -->
+<header ng-app="myApp" ng-controller="myAppCtrl">
+    <nav class="blue-grey darken-1">
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo">Andrew Maczugowski</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li ng-class="{active:shared.about}"><a href="#!/about">About</a></li>
+                <li ng-class="{active:shared.skills}"><a href="#!/skills">Skills</a></li>
+                <!--<li><a href="#!/portfolio">Portfolio</a></li>-->
+                <li><a ng-click="shared.go('#!/contact')" class="waves-effect waves-light btn-large">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please
+    <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<div ng-view></div>
+
+</body>
+</html>

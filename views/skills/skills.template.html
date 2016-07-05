@@ -1,0 +1,102 @@
+<div ng-app="skills" ng-controller="skillsCtrl">
+    <div class="section">
+        <div class="container">
+            <!-- Header and Search Box -->
+            <div class="row">
+                <div class="col s12 m9">
+                    <h1 class="header center-on-small-only">Skills</h1>
+                    <div class="input-field">
+                        <input id="searchBox" type="text" ng-model="searchText">
+                        <label for="searchBox">search for skills</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page Body -->
+            <div class="row">
+                <div class="col s12 m9">
+                    <h3>Languages</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div ng-repeat="item in languages | filter:searchText">
+                    <div class="col s12 m3">
+                        <div class="card blue lighten-2">
+                            <div class="card-content white-text">
+                                <span class="card-title">{{item}}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col s12 m9">
+                    <h3>Frameworks</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div ng-repeat="item in frameworks | filter:searchText">
+                    <div class="col s12 m3">
+                        <div class="card green lighten-2">
+                            <div class="card-content white-text">
+                                <span class="card-title">{{item}}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col s12 m9">
+                    <h3>Tools</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div ng-repeat="item in tools | filter:searchText">
+                    <div class="col s12 m3">
+                        <div class="card orange lighten-1">
+                            <div class="card-content white-text">
+                                <span class="card-title">{{item}}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col s12 m9">
+                    <h3>Operating Systems</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div ng-repeat="item in os | filter:searchText">
+                    <div class="col s12 m3">
+                        <div class="card red lighten-2">
+                            <div class="card-content white-text">
+                                <span class="card-title">{{item}}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col s12 m9">
+                    <h3>Skills</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div ng-repeat="item in skills | filter:searchText">
+                    <div class="col s12 m3">
+                        <div class="card purple lighten-2">
+                            <div class="card-content white-text">
+                                <span class="card-title">{{item}}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
