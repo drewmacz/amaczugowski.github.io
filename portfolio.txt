@@ -1,0 +1,10 @@
+Portfolio
+
+Song Display [Java, csv, parsing, object oriented design, object oriented principles]
+- Final project for my data structures and algorithms class.
+- I lead a team of three to create a Java application from scratch to display statistics about our data structures and algorithms class's music preferences. These demographics were parsed from CSV files of differing formats and stored in a backend data structure, which we designed specifically to store our data efficiently using the object oriented principles we learned during the class. This data was then displayed on a clean visual interface which allowed the user to view all given demographics about the class.
+
+
+Restful Todo List [Javascript, HTML, REST API, Angularjs, Materialize]
+- A todo list for the web.
+- I developed a website that allows a user to keep track of things they need to do.
