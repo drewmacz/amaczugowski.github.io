@@ -7,6 +7,9 @@ var app = angular.module('main', ['myApp']);
 app.controller('mainCtrl', function($scope, shared) {
     $scope.shared = shared;
 
+    /**
+     * Called on page load.
+     */
     $scope.pageInit = function() {
         shared.about = false;
         shared.skills = false;
