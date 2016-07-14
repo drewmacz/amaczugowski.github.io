@@ -1,0 +1,17 @@
+{
+  "name": "amaczugowski.github.io",
+  "homepage": "https://github.com/amaczugowski/amaczugowski.github.io",
+  "authors": [
+    "Andrew Maczugowski <amaczugowski@gmail.com>"
+  ],
+  "description": "The personal website of Andrew Maczugowski",
+  "main": "index.html",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular-loader": "~1.5.0",
+    "angular-mocks": "~1.5.0",
+    "angular-route": "~1.5.0",
+    "html5-boilerplate": "^5.3.0"
+  }
+}

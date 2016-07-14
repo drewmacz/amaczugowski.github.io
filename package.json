@@ -1,0 +1,23 @@
+{
+  "name": "amaczugowski.github.io",
+  "version": "1.0.0",
+  "description": "The personal website of Andrew Maczugowski",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amaczugowski/amaczugowski.github.io.git"
+  },
+  "author": "Andrew Maczugowski <amaczugowski@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amaczugowski/amaczugowski.github.io/issues"
+  },
+  "homepage": "https://github.com/amaczugowski/amaczugowski.github.io#readme",
+  "devDependencies": {
+    "browser-sync": "^2.13.0",
+    "gulp": "^3.9.1"
+  }
+}
