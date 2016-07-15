@@ -5,8 +5,9 @@ var app = angular.module('myApp', [
     'ngRoute',
     'main',
     'about',
-    'contact',
-    'skills'
+    'skills',
+    'portfolio',
+    'contact'
 ]);
 
 // Define the routes for the application
@@ -15,19 +16,23 @@ app.config(['$locationProvider', '$routeProvider', function ($locationProvider, 
 
     $routeProvider
         .when('/main', {
-            templateUrl: 'views/main/main.template.html',
+            templateUrl: 'views/main/main.html',
             controller: 'mainCtrl'
         })
         .when('/about', {
-            templateUrl: 'views/about/about.template.html',
+            templateUrl: 'views/about/about.html',
             controller: 'aboutCtrl'
         })
         .when('/skills', {
-            templateUrl: 'views/skills/skills.template.html',
+            templateUrl: 'views/skills/skills.html',
             controller: 'skillsCtrl'
         })
+        .when('/portfolio', {
+            templateUrl: 'views/portfolio/portfolio.html',
+            controller: 'portfolioCtrl'
+        })
         .when('/contact', {
-            templateUrl: 'views/contact/contact.template.html',
+            templateUrl: 'views/contact/contact.html',
             controller: 'contactCtrl'
         })
         .otherwise('/main');
