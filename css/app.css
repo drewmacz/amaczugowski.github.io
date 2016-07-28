@@ -33,3 +33,27 @@
   padding-left: 10px !important;
   padding-right: 10px !important;
 }
+
+.fade{
+    position: absolute;
+    top:auto;
+    left: 0;
+    right: 0;
+}
+.fade.ng-enter,
+.fade.ng-leave {
+    -webkit-transition: all .7s ease;
+    transition: all .7s ease;
+}
+.fade.ng-enter {
+    opacity: 0;
+}
+.fade.ng-enter-active {
+    opacity: 1;
+}
+.fade.ng-leave {
+    opacity: 1;
+}
+.fade.ng-leave-active {
+    opacity: 0;
+}
