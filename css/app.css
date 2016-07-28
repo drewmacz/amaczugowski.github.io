@@ -28,3 +28,8 @@
   content: "";
   padding: 0;
 }
+
+.logo-padding {
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}

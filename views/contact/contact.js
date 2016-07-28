@@ -11,7 +11,9 @@ app.controller('contactCtrl', function($scope, shared) {
     $scope.pageInit = function() {
         shared.about = false;
         shared.skills = false;
+
+        Materialize.toast('click my name to go back', 2500);
     };
-    
+
     $scope.pageInit()
 });

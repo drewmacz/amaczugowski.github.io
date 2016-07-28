@@ -30,10 +30,12 @@
     <!-- In production use:
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
     -->
-    <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-route/angular-route.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/vendor/materialize.js"></script>
+
+    <!-- My Scripts -->
     <script src="app.js"></script>
     <script src="js/services/shared.js"></script>
     <script src="views/main/main.js"></script>
@@ -49,7 +51,7 @@
 <header ng-app="myApp" ng-controller="myAppCtrl">
     <nav class="blue-grey darken-1">
         <div class="nav-wrapper">
-            <a href="#" class="brand-logo">Andrew Maczugowski</a>
+            <a href="#" class="brand-logo logo-padding">Andrew Maczugowski</a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li ng-class="{active:shared.about}"><a href="#!/about">about</a></li>
                 <li ng-class="{active:shared.skills}"><a href="#!/skills">skills</a></li>

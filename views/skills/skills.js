@@ -19,6 +19,8 @@ app.controller('skillsCtrl', function($scope, $filter,  shared) {
     $scope.pageInit = function() {
         shared.about = false;
         shared.skills = true;
+
+        Materialize.toast('click my name to go back', 2500);
     };
 
     /**
