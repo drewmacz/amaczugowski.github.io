@@ -12,7 +12,7 @@ app.factory('shared', function($window, $timeout) {
     data.waitAndGo = function(url) {
         $timeout(function() {
             data.go(url);
-        }, 250);
+        }, 200);
     };
 
     data.about = false;
