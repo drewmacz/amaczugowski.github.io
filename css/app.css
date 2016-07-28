@@ -61,5 +61,30 @@
 input[type='text'],
 input[type='number'],
 textarea {
-  font-size: 18px;
+    font-size: 18px;
+}
+
+input {
+    -webkit-transition: .4s ease-in-out;
+    transition: .4s ease-in-out;
+}
+
+input:focus {
+    color: teal !important;
+}
+
+::-webkit-input-placeholder {
+    color: grey !important;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    color: grey !important;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+    color: grey !important;
+}
+
+:-ms-input-placeholder {
+   color: grey !important;
 }
