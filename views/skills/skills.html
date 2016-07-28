@@ -6,7 +6,8 @@
                 <div class="col s12 m9">
                     <h1 class="header center-on-small-only light">Skills</h1>
                     <div class="input-field">
-                        <input placeholder="search for skills" type="text" ng-model="searchText">
+                        <input id="skill_search" type="text" ng-model="searchText">
+                        <label for="skill_search">search for skills</label>
                     </div>
                 </div>
             </div>
@@ -17,7 +18,7 @@
                     <h3 class="light blue-grey-text">Languages</h3>
                 </div>
             </div>
-            <div class="row">
+            <div class="row" ng-show="hasMatches(languages)">
                 <div ng-repeat="item in languages | filter:searchText">
                     <div class="col s12 m3">
                         <A ng-href="#!/skills/{{item}}">
@@ -36,7 +37,7 @@
                     <h3 class="light blue-grey-text">Frameworks</h3>
                 </div>
             </div>
-            <div class="row">
+            <div class="row" ng-show="hasMatches(frameworks)">
                 <div ng-repeat="item in frameworks | filter:searchText">
                     <div class="col s12 m3">
                         <A ng-href="#!/skills/{{item}}">
@@ -55,7 +56,7 @@
                     <h3 class="light blue-grey-text">Tools</h3>
                 </div>
             </div>
-            <div class="row">
+            <div class="row" ng-show="hasMatches(tools)">
                 <div ng-repeat="item in tools | filter:searchText">
                     <div class="col s12 m3">
                         <A ng-href="#!/skills/{{item}}">
@@ -74,7 +75,7 @@
                     <h3 class="light blue-grey-text">Operating Systems</h3>
                 </div>
             </div>
-            <div class="row">
+            <div class="row" ng-show="hasMatches(oss)">
                 <div ng-repeat="item in oss | filter:searchText">
                     <div class="col s12 m3">
                         <A ng-href="#!/skills/{{item}}">
@@ -93,7 +94,7 @@
                     <h3 class="light blue-grey-text">Technical Skills</h3>
                 </div>
             </div>
-            <div class="row">
+            <div class="row" ng-show="hasMatches(skills)">
                 <div ng-repeat="item in skills | filter:searchText">
                     <div class="col s12 m3">
                         <A ng-href="#!/skills/{{item}}">
@@ -106,6 +107,9 @@
                     </div>
                 </div>
             </div>
+            <h5 class="slim row center-align blue-grey-text">
+                Seen enough? <a href="#!/contact" class="teal-text">Contact me.</a>
+            </h5>
         </div>
     </div>
 </div>
