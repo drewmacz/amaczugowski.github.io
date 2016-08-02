@@ -6,24 +6,19 @@
   margin-bottom: 2em;
   padding: 0 0 0.5em;
 }
-
 .menu:before {
   content: "[";
 }
-
 .menu:after {
   content: "]";
 }
-
 .menu > li {
   display: inline;
 }
-
 .menu > li:before {
   content: "|";
   padding-right: 0.3em;
 }
-
 .menu > li:nth-child(1):before {
   content: "";
   padding: 0;
@@ -71,8 +66,10 @@
     -webkit-transition: all .5s ease;
     transition: all .5s ease;
 }
-.site-link:hover {
-    color: rgb(255, 102, 102) !important;
+@media screen and (min-width: 993px) {
+    .site-link:hover {
+        color: rgb(255, 102, 102) !important;
+    }
 }
 
 input[type='text'],
@@ -85,7 +82,6 @@ input {
     -webkit-transition: .4s ease-in-out;
     transition: .4s ease-in-out;
 }
-
 input:focus {
     color: teal !important;
 }
