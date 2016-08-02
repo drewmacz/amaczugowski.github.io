@@ -2,8 +2,12 @@
 
 var app = angular.module('myApp');
 
-app.factory('shared', function($state, $timeout) {
+app.factory('shared', function($window, $state, $timeout) {
     var data = {};
+
+    data.openInTab = function(url) {
+        $window.open(url);
+    };
 
     data.go = function(state) {
         $state.go(state);

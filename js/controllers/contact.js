@@ -5,6 +5,8 @@ var app = angular.module('contact', ['myApp']);
 
 // Controller for the contact view
 app.controller('contactCtrl', function($scope, shared) {
+    $scope.shared = shared;
+
     /**
      * Called on page load.
      */

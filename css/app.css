@@ -67,6 +67,14 @@
     transition: all .5s ease;
 }
 
+.site-link {
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+.site-link:hover {
+    color: rgb(255, 102, 102) !important;
+}
+
 input[type='text'],
 input[type='number'],
 textarea {
