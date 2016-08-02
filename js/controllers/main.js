@@ -11,6 +11,7 @@ app.controller('mainCtrl', function($scope, shared) {
      * Called on page load.
      */
     $scope.pageInit = function() {
+        shared.main = true;
         shared.about = false;
         shared.skills = false;
     };

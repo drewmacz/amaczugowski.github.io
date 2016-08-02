@@ -31,7 +31,7 @@
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
     -->
     <script src="bower_components/angular/angular.min.js"></script>
-    <script src="bower_components/angular-route/angular-route.min.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
     <script src="bower_components/angular-animate/angular-animate.min.js"></script>
     <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="bower_components/materialize/dist/js/materialize.min.js"></script>
@@ -52,12 +52,25 @@
 <header ng-app="myApp" ng-controller="myAppCtrl">
     <nav class="blue-grey darken-1">
         <div class="nav-wrapper">
-            <a href="#" class="brand-logo logo-padding">Andrew Maczugowski</a>
+            <ul class="back-button left hide-on-large-only" ng-show="!shared.main">
+                <li>
+                    <a ui-sref="main"><i class="material-icons">navigate_before</i></a>
+                </li>
+            </ul>
+            <a ui-sref="main" class="brand-logo logo-padding">Andrew Maczugowski</a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li ng-class="{active:shared.about}"><a href="#!/about">about</a></li>
-                <li ng-class="{active:shared.skills}"><a href="#!/skills">skills</a></li>
-                <!--<li><a href="#!/portfolio">portfolio</a></li>-->
-                <li><a ng-click="shared.go('#!/contact')" class="waves-effect waves-light btn-large">Contact</a></li>
+                <li ng-class="{active:shared.about}">
+                    <a ui-sref="about">about</a>
+                </li>
+                <li ng-class="{active:shared.skills}">
+                    <a ui-sref="skills">skills</a>
+                </li>
+                <!--<li>
+                    <a href="#!/portfolio">portfolio</a>
+                </li>-->
+                <li>
+                    <a ng-click="shared.go('contact')" class="waves-effect waves-light btn-large">Contact</a>
+                </li>
             </ul>
         </div>
     </nav>
@@ -68,7 +81,8 @@
     <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
 
-<div ng-view class="fade"></div>
+
+<div ui-view class="fade"></div>
 
 
 </body>

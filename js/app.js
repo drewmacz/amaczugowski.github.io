@@ -2,7 +2,7 @@
 
 // Declare app level module which depends on views, and components
 var app = angular.module('myApp', [
-    'ngRoute',
+    'ui.router',
     'ngAnimate',
     'main',
     'about',
@@ -12,31 +12,37 @@ var app = angular.module('myApp', [
 ]);
 
 // Define the routes for the application
-app.config(['$locationProvider', '$routeProvider', function ($locationProvider, $routeProvider) {
-    $locationProvider.hashPrefix('!');
+app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
 
-    $routeProvider
-        .when('/main', {
+    $urlRouterProvider.otherwise('/main');
+
+    $stateProvider
+        .state('main', {
+            url: '/main',
             templateUrl: 'templates/main.html',
             controller: 'mainCtrl'
         })
-        .when('/about', {
+        .state('about', {
+            url: '/about',
             templateUrl: 'templates/about.html',
             controller: 'aboutCtrl'
         })
-        .when('/skills', {
+        .state('skills', {
+            url: '/skills',
             templateUrl: 'templates/skills.html',
             controller: 'skillsCtrl'
         })
-        .when('/portfolio', {
+        .state('portfolio', {
+            url: '/portfolio',
             templateUrl: 'templates/portfolio.html',
             controller: 'portfolioCtrl'
         })
-        .when('/contact', {
+        .state('contact', {
+            url: '/contact',
             templateUrl: 'templates/contact.html',
             controller: 'contactCtrl'
-        })
-        .otherwise('/main');
+        });
+
 }]);
 
 app.controller('myAppCtrl', function($scope, shared) {

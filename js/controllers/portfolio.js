@@ -11,10 +11,9 @@ app.controller('portfolioCtrl', function($scope, shared) {
      * Called on page load.
      */
     $scope.pageInit = function() {
+        shared.setMain();
         shared.about = false;
         shared.skills = false;
-
-        Materialize.toast('click my name to go back', 2500);
     };
 
     $scope.pageInit()

@@ -58,6 +58,15 @@
     opacity: 0;
 }
 
+.back-button.ng-hide {
+    opacity: 0;
+}
+.back-button.ng-hide-remove,
+.back-button.ng-hide-add {
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
 input[type='text'],
 input[type='number'],
 textarea {
