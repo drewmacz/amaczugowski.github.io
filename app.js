@@ -17,23 +17,23 @@ app.config(['$locationProvider', '$routeProvider', function ($locationProvider, 
 
     $routeProvider
         .when('/main', {
-            templateUrl: 'views/main/main.html',
+            templateUrl: 'templates/main.html',
             controller: 'mainCtrl'
         })
         .when('/about', {
-            templateUrl: 'views/about/about.html',
+            templateUrl: 'templates/about.html',
             controller: 'aboutCtrl'
         })
         .when('/skills', {
-            templateUrl: 'views/skills/skills.html',
+            templateUrl: 'templates/skills.html',
             controller: 'skillsCtrl'
         })
         .when('/portfolio', {
-            templateUrl: 'views/portfolio/portfolio.html',
+            templateUrl: 'templates/portfolio.html',
             controller: 'portfolioCtrl'
         })
         .when('/contact', {
-            templateUrl: 'views/contact/contact.html',
+            templateUrl: 'templates/contact.html',
             controller: 'contactCtrl'
         })
         .otherwise('/main');
