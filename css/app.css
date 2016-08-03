@@ -68,19 +68,42 @@
 }
 @media screen and (min-width: 993px) {
     .site-link:hover {
-        color: rgb(255, 102, 102) !important;
+        color: rgb(0, 204, 204) !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .card {
+        margin-bottom: .5rem !important;
+    }
+    .card .card-content {
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+        padding-top: 8px !important;
+        padding-bottom: 8px !important;
+    }
+    nav ul a {
+        padding: 0 9px !important;
+    }
+}
+
+@media screen and (min-width: 601px) {
+    @media screen and (max-width: 992px) {
+        .card .card-content {
+            padding-top: 16px !important;
+            padding-bottom: 16px !important;
+        }
     }
 }
 
 input[type='text'],
 input[type='number'],
 textarea {
-    font-size: 18px;
+    font-size: 16px !important;
 }
 
 input {
-    -webkit-transition: .4s ease-in-out;
-    transition: .4s ease-in-out;
+    padding: 5px !important;
 }
 input:focus {
     color: teal !important;
