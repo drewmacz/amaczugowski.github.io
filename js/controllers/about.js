@@ -11,7 +11,9 @@ app.controller('aboutCtrl', function($scope, shared) {
     $scope.pageInit = function() {
         shared.setMain();
         shared.about = true;
+        shared.portfolio = false;
         shared.skills = false;
+        shared.contact = false;
     };
 
     $scope.pageInit();

@@ -4,14 +4,16 @@
 var app = angular.module('skills', ['myApp']);
 
 // Controller for the skills view
-app.controller('skillsCtrl', function($scope, $filter,  shared) {
+app.controller('skillsCtrl', function($scope, shared, skillsList) {
     $scope.searchText = '';
 
-    $scope.languages = ['Java', 'Javascript', 'Python', 'Groovy', 'C', 'C#', 'MatLab', 'Lua', 'CSS', 'HTML'];
-    $scope.frameworks = ['AngularJS', 'Node.js', 'Express', 'Grails', 'Foundation', 'Materialize', 'Mongoose'];
-    $scope.tools = ['Eclipse', 'IntelliJ', 'Visual Studio', 'Xcode', 'Android Studio', 'Sublime', 'Atom', 'Nodepad++', 'GNU', 'Vim', 'NPM', 'Bower', 'Gradle', 'Gulp', 'MongoDB', 'PuTTY'];
-    $scope.oss = ['Android', 'OS X', 'Windows 7', 'Windows 8', 'Windows 10', 'Linux', 'Redhat', 'CentOS', 'Debian', 'Ubuntu'];
-    $scope.skills = ['JUnit', 'REST API', 'Git', 'Version Control', 'GitHub', 'GitLab', 'JSON', 'XML', 'Object Oriented Principles (OOP)', 'Object Oriented Design (OOD)', 'MEAN Stack Development', 'Full Stack Development', 'UML', 'Agile'];
+    $scope.shared = shared;
+
+    $scope.languages = skillsList.languages;
+    $scope.frameworks = skillsList.frameworks;
+    $scope.tools = skillsList.tools;
+    $scope.oss = skillsList.oss;
+    $scope.skills = skillsList.skills;
 
     /**
      * Called on page load.
@@ -19,7 +21,9 @@ app.controller('skillsCtrl', function($scope, $filter,  shared) {
     $scope.pageInit = function() {
         shared.setMain();
         shared.about = false;
+        shared.portfolio = false;
         shared.skills = true;
+        shared.contact = false;
     };
 
     /**
@@ -30,7 +34,7 @@ app.controller('skillsCtrl', function($scope, $filter,  shared) {
      * @returns {boolean}
      */
     $scope.hasMatches = function(array) {
-        return $filter('filter')(array, $scope.searchText).length > 0;
+        return shared.hasMatches(array, $scope.searchText);
     };
 
     $scope.pageInit();
