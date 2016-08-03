@@ -40,7 +40,6 @@
     <!-- My Scripts -->
     <script src="js/app.js"></script>
     <script src="js/services.js"></script>
-    <script src="js/controllers/main.js"></script>
     <script src="js/controllers/about.js"></script>
     <script src="js/controllers/skills.js"></script>
     <script src="js/controllers/portfolio.js"></script>
@@ -52,7 +51,7 @@
 <!-- Nav Bar for the website -->
 <header ng-app="myApp" ng-controller="myAppCtrl">
     <div class="navbar-fixed">
-        <nav class="blue-grey darken-1">
+        <nav class="dark-navy">
             <div class="nav-wrapper">
                 <!-- <ul class="back-button left hide-on-large-only" ng-show="!shared.main">
                     <li>
@@ -72,10 +71,10 @@
                         <a class="nav-tab waves-effect" ui-sref="skills">skills</a>
                     </li>
                     <li>
-                        <a ng-click="shared.go('contact')" class="waves-effect waves-light btn-large">Contact</a>
+                        <a ng-click="shared.go('contact')" class="waves-effect waves-light btn-large medium-blue">Contact</a>
                     </li>
                 </ul>
-                <ul class="side-nav blue-grey darken-3" id="mobile-nav">
+                <ul class="side-nav medium-blue" id="mobile-nav">
                     <li ng-class="{active:shared.about}">
                         <a class="white-text waves-effect" ng-click="closeSideNav('about')">about</a>
                     </li>

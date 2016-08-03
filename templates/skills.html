@@ -13,14 +13,14 @@
         <!-- Page Body -->
         <div class="row" ng-show="hasMatches(languages)">
             <div class="col s12 m9">
-                <h3 class="light blue-grey-text">Languages</h3>
+                <h3 class="light dark-grey-text">Languages</h3>
             </div>
         </div>
         <div class="row" ng-show="hasMatches(languages)">
             <div ng-repeat="item in languages | filter:searchText">
-                <div class="col s12 m4 l3">
+                <div class="col s12 m4">
                     <!-- <A ng-href="#!/skills/{{item}}"> -->
-                        <div class="card blue lighten-2">
+                        <div class="card medium-blue">
                             <div class="card-content white-text">
                                 <span class="card-title">{{item}}</span>
                             </div>
@@ -32,14 +32,14 @@
 
         <div class="row" ng-show="hasMatches(frameworks)">
             <div class="col s12 m9">
-                <h3 class="light blue-grey-text">Frameworks</h3>
+                <h3 class="light dark-grey-text">Frameworks</h3>
             </div>
         </div>
         <div class="row" ng-show="hasMatches(frameworks)">
             <div ng-repeat="item in frameworks | filter:searchText">
-                <div class="col s12 m4 l3">
+                <div class="col s12 m4">
                     <!-- <A ng-href="#!/skills/{{item}}"> -->
-                        <div class="card green lighten-2">
+                        <div class="card coral">
                             <div class="card-content white-text">
                                 <span class="card-title">{{item}}</span>
                             </div>
@@ -51,14 +51,14 @@
 
         <div class="row" ng-show="hasMatches(tools)">
             <div class="col s12 m9">
-                <h3 class="light blue-grey-text">Tools</h3>
+                <h3 class="light dark-grey-text">Tools</h3>
             </div>
         </div>
         <div class="row" ng-show="hasMatches(tools)">
             <div ng-repeat="item in tools | filter:searchText">
-                <div class="col s12 m4 l3">
+                <div class="col s12 m4">
                     <!-- <A ng-href="#!/skills/{{item}}"> -->
-                        <div class="card orange lighten-1">
+                        <div class="card medium-blue">
                             <div class="card-content white-text">
                                 <span class="card-title">{{item}}</span>
                             </div>
@@ -70,14 +70,14 @@
 
         <div class="row" ng-show="hasMatches(oss)">
             <div class="col s12 m9">
-                <h3 class="light blue-grey-text">Operating Systems</h3>
+                <h3 class="light dark-grey-text">Operating Systems</h3>
             </div>
         </div>
         <div class="row" ng-show="hasMatches(oss)">
             <div ng-repeat="item in oss | filter:searchText">
-                <div class="col s12 m4 l3">
+                <div class="col s12 m4">
                     <!-- <A ng-href="#!/skills/{{item}}"> -->
-                        <div class="card red lighten-2">
+                        <div class="card coral">
                             <div class="card-content white-text">
                                 <span class="card-title">{{item}}</span>
                             </div>
@@ -89,14 +89,14 @@
 
         <div class="row" ng-show="hasMatches(skills)">
             <div class="col s12 m9">
-                <h3 class="light blue-grey-text">Technical Skills</h3>
+                <h3 class="light dark-grey-text">Technical Skills</h3>
             </div>
         </div>
         <div class="row" ng-show="hasMatches(skills)">
             <div ng-repeat="item in skills | filter:searchText">
-                <div class="col s12 m4 l3">
+                <div class="col s12 m4">
                     <!-- <A ng-href="#!/skills/{{item}}"> -->
-                        <div class="card purple lighten-2">
+                        <div class="card medium-blue">
                             <div class="card-content white-text">
                                 <span class="card-title">{{item}}</span>
                             </div>
@@ -105,7 +105,7 @@
                 </div>
             </div>
         </div>
-        <h5 class="slim row center-align blue-grey-text">
+        <h5 class="slim row center-align dark-grey-text">
             Seen enough? <a ui-sref="contact" class="site-link">Contact me.</a>
         </h5>
         <div class="center-align">

@@ -4,7 +4,6 @@
 var app = angular.module('myApp', [
     'ui.router',
     'ngAnimate',
-    'main',
     'about',
     'skills',
     'portfolio',
@@ -14,14 +13,9 @@ var app = angular.module('myApp', [
 // Define the routes for the application
 app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
 
-    $urlRouterProvider.otherwise('/main');
+    $urlRouterProvider.otherwise('/about');
 
     $stateProvider
-        .state('main', {
-            url: '/main',
-            templateUrl: 'templates/main.html',
-            controller: 'mainCtrl'
-        })
         .state('about', {
             url: '/about',
             templateUrl: 'templates/about.html',

@@ -8,7 +8,7 @@ app.controller('portfolioCtrl', function($scope, shared) {
     $scope.shared = shared;
 
     $scope.projects = [
-        'hello'
+        'coming soon'
     ]
 
     /**

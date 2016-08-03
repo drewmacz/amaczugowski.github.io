@@ -57,7 +57,7 @@ app.factory('skillsList', function() {
     data.frameworks = ['AngularJS', 'Node.js', 'Express', 'Grails', 'Foundation', 'Materialize', 'Mongoose'];
     data.tools = ['Eclipse', 'IntelliJ', 'Visual Studio', 'Xcode', 'Android Studio', 'Sublime', 'Atom', 'Nodepad++', 'GNU', 'Vim', 'NPM', 'Bower', 'Gradle', 'Gulp', 'MongoDB', 'PuTTY'];
     data.oss = ['Android', 'OS X', 'Windows 7', 'Windows 8', 'Windows 10', 'Linux', 'Redhat', 'CentOS', 'Debian', 'Ubuntu'];
-    data.skills = ['JUnit', 'REST API', 'Git', 'Version Control', 'GitHub', 'GitLab', 'JSON', 'XML', 'Object Oriented Principles (OOP)', 'Object Oriented Design (OOD)', 'MEAN Stack Development', 'Full Stack Development', 'UML', 'Agile'];
+    data.skills = ['JUnit', 'REST API', 'Git', 'Version Control', 'GitHub', 'GitLab', 'JSON', 'XML', 'UML', 'Object Oriented Principles (OOP)', 'Object Oriented Design (OOD)', 'MEAN Stack Development', 'Full Stack Development', 'Agile'];
 
     return data;
 });
