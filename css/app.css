@@ -202,11 +202,20 @@ textarea {
     font-size: 16px !important;
 }
 
+input[type=text]:focus {
+    border-bottom: 1px solid #3a9ad9 !important;
+    box-shadow: 0 1px 0 0 #3a9ad9 !important;
+}
+
+.input-field .prefix.active {
+    color: #3a9ad9 !important;
+}
+
 input {
     padding: 5px !important;
 }
 input:focus {
-    color: teal !important;
+    color: #3a9ad9 !important;
 }
 
 .prefix {
