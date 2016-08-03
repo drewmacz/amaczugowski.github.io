@@ -47,4 +47,9 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
 
 app.controller('myAppCtrl', function($scope, shared) {
     $scope.shared = shared;
+
+    $scope.closeSideNav = function(state) {
+        $('.button-collapse').sideNav('hide');
+        shared.waitAndGo(state, 150);
+    };
 });

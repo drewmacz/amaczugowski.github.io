@@ -51,36 +51,52 @@
 <body class="grey lighten-3">
 <!-- Nav Bar for the website -->
 <header ng-app="myApp" ng-controller="myAppCtrl">
-    <nav class="blue-grey darken-1">
-        <div class="nav-wrapper">
-            <ul class="back-button left hide-on-large-only" ng-show="!shared.main">
-                <li>
-                    <a ui-sref="main"><i class="material-icons">navigate_before</i></a>
-                </li>
-            </ul>
-            <a ui-sref="main" class="brand-logo logo-padding">Andrew Maczugowski</a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li ng-class="{active:shared.about}">
-                    <a ui-sref="about">about</a>
-                </li>
-                <li ng-class="{active:shared.skills}">
-                    <a ui-sref="skills">skills</a>
-                </li>
-                <!--<li>
-                    <a href="#!/portfolio">portfolio</a>
-                </li>-->
-                <li>
-                    <a ng-click="shared.go('contact')" class="waves-effect waves-light btn-large">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    <div class="navbar-fixed">
+        <nav class="blue-grey darken-1">
+            <div class="nav-wrapper">
+                <!-- <ul class="back-button left hide-on-large-only" ng-show="!shared.main">
+                    <li>
+                        <a ui-sref="main"><i class="material-icons">navigate_before</i></a>
+                    </li>
+                </ul> -->
+                <a ui-sref="about" class="brand-logo logo-padding">Andrew Maczugowski</a>
+                <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li ng-class="{active:shared.about}">
+                        <a class="nav-tab waves-effect" ui-sref="about">about</a>
+                    </li>
+                    <li ng-class="{active:shared.portfolio}">
+                        <a class="nav-tab waves-effect" ui-sref="portfolio">portfolio</a>
+                    </li>
+                    <li ng-class="{active:shared.skills}">
+                        <a class="nav-tab waves-effect" ui-sref="skills">skills</a>
+                    </li>
+                    <li>
+                        <a ng-click="shared.go('contact')" class="waves-effect waves-light btn-large">Contact</a>
+                    </li>
+                </ul>
+                <ul class="side-nav blue-grey darken-3" id="mobile-nav">
+                    <li ng-class="{active:shared.about}">
+                        <a class="white-text waves-effect" ng-click="closeSideNav('about')">about</a>
+                    </li>
+                    <li ng-class="{active:shared.portfolio}">
+                        <a class="white-text waves-effect" ng-click="closeSideNav('portfolio')">portfolio</a>
+                    </li>
+                    <li ng-class="{active:shared.skills}">
+                        <a class="white-text waves-effect" ng-click="closeSideNav('skills')">skills</a>
+                    </li>
+                    <li ng-class="{active:shared.contact}">
+                        <a class="white-text waves-effect" ng-click="closeSideNav('contact')">contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <script>
+        // Initialize Materialize side nav
+        $(".button-collapse").sideNav();
+    </script>
 </header>
-
-<!--[if lt IE 7]>
-<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please
-    <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-<![endif]-->
 
 
 <div ui-view class="fade"></div>

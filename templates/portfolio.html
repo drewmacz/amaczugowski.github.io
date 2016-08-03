@@ -1,3 +1,43 @@
-<div>
-    Portfolio
+<div class="section">
+    <div class="container">
+        <!-- Header and Search Box -->
+        <div class="row">
+            <div class="col s12 m9">
+                <h1 class="header center-on-small-only light">Portfolio</h1>
+                <div class="input-field">
+                    <i class="material-icons prefix">search</i><input type="text" placeholder="search for projects by tag" ng-model="searchText">
+                </div>
+            </div>
+        </div>
+
+        <!-- Page Body -->
+        <div class="row">
+            <div class="col s12 m9">
+                <h3 class="light blue-grey-text">Projects I've worked on</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div ng-repeat="item in projects | filter:searchText">
+                <div class="row">
+                    <div class="col s12 m10 offset-m1 l6 offset-l3">
+                        <div class="card">
+                            <div class="card-content">
+                                <span class="card-title">{{item}}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h5 class="slim row center-align blue-grey-text">
+            Seen enough? <a ui-sref="contact" class="site-link">Contact me.</a>
+        </h5>
+        <div class="center-align">
+            <h4>
+                <a class="site-link side-padding" href="mailto:amaczugowski@gmail.com"><i class="mdi mdi-mail-ru"></i></a>
+                <a class="site-link side-padding" ng-click="shared.openInTab('http://www.github.com/amaczugowski')"><i class="mdi mdi-github-box"></i></a>
+                <a class="site-link side-padding" ng-click="shared.openInTab('http://www.linkedin.com/in/andrew-maczugowski')"><i class="mdi mdi-linkedin-box"></i></a>
+            </h4>
+        </div>
+    </div>
 </div>

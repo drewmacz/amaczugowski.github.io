@@ -7,13 +7,19 @@ var app = angular.module('portfolio', ['myApp']);
 app.controller('portfolioCtrl', function($scope, shared) {
     $scope.shared = shared;
 
+    $scope.projects = [
+        'hello'
+    ]
+
     /**
      * Called on page load.
      */
     $scope.pageInit = function() {
         shared.setMain();
         shared.about = false;
+        shared.portfolio = true;
         shared.skills = false;
+        shared.contact = false;
     };
 
     $scope.pageInit()

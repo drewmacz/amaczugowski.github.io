@@ -1,114 +1,119 @@
-<div>
-    <div class="section">
-        <div class="container">
-            <!-- Header and Search Box -->
-            <div class="row">
-                <div class="col s12 m9">
-                    <h1 class="header center-on-small-only light">Skills</h1>
-                    <div class="input-field">
-                        <i class="material-icons prefix">search</i><input type="text" placeholder="search for skills" ng-model="searchText">
-                    </div>
+<div class="section">
+    <div class="container">
+        <!-- Header and Search Box -->
+        <div class="row">
+            <div class="col s12 m9">
+                <h1 class="header center-on-small-only light">Skills</h1>
+                <div class="input-field">
+                    <i class="material-icons prefix">search</i><input type="text" placeholder="search for skills" ng-model="searchText">
                 </div>
             </div>
+        </div>
 
-            <!-- Page Body -->
-            <div class="row" ng-show="hasMatches(languages)">
-                <div class="col s12 m9">
-                    <h3 class="light blue-grey-text">Languages</h3>
-                </div>
+        <!-- Page Body -->
+        <div class="row" ng-show="hasMatches(languages)">
+            <div class="col s12 m9">
+                <h3 class="light blue-grey-text">Languages</h3>
             </div>
-            <div class="row" ng-show="hasMatches(languages)">
-                <div ng-repeat="item in languages | filter:searchText">
-                    <div class="col s12 m4 l3">
-                        <!-- <A ng-href="#!/skills/{{item}}"> -->
-                            <div class="card blue lighten-2">
-                                <div class="card-content white-text">
-                                    <span class="card-title">{{item}}</span>
-                                </div>
+        </div>
+        <div class="row" ng-show="hasMatches(languages)">
+            <div ng-repeat="item in languages | filter:searchText">
+                <div class="col s12 m4 l3">
+                    <!-- <A ng-href="#!/skills/{{item}}"> -->
+                        <div class="card blue lighten-2">
+                            <div class="card-content white-text">
+                                <span class="card-title">{{item}}</span>
                             </div>
-                        <!-- </A> -->
-                    </div>
+                        </div>
+                    <!-- </A> -->
                 </div>
             </div>
+        </div>
 
-            <div class="row" ng-show="hasMatches(frameworks)">
-                <div class="col s12 m9">
-                    <h3 class="light blue-grey-text">Frameworks</h3>
-                </div>
+        <div class="row" ng-show="hasMatches(frameworks)">
+            <div class="col s12 m9">
+                <h3 class="light blue-grey-text">Frameworks</h3>
             </div>
-            <div class="row" ng-show="hasMatches(frameworks)">
-                <div ng-repeat="item in frameworks | filter:searchText">
-                    <div class="col s12 m4 l3">
-                        <!-- <A ng-href="#!/skills/{{item}}"> -->
-                            <div class="card green lighten-2">
-                                <div class="card-content white-text">
-                                    <span class="card-title">{{item}}</span>
-                                </div>
+        </div>
+        <div class="row" ng-show="hasMatches(frameworks)">
+            <div ng-repeat="item in frameworks | filter:searchText">
+                <div class="col s12 m4 l3">
+                    <!-- <A ng-href="#!/skills/{{item}}"> -->
+                        <div class="card green lighten-2">
+                            <div class="card-content white-text">
+                                <span class="card-title">{{item}}</span>
                             </div>
-                        <!-- </A> -->
-                    </div>
+                        </div>
+                    <!-- </A> -->
                 </div>
             </div>
+        </div>
 
-            <div class="row" ng-show="hasMatches(tools)">
-                <div class="col s12 m9">
-                    <h3 class="light blue-grey-text">Tools</h3>
-                </div>
+        <div class="row" ng-show="hasMatches(tools)">
+            <div class="col s12 m9">
+                <h3 class="light blue-grey-text">Tools</h3>
             </div>
-            <div class="row" ng-show="hasMatches(tools)">
-                <div ng-repeat="item in tools | filter:searchText">
-                    <div class="col s12 m4 l3">
-                        <!-- <A ng-href="#!/skills/{{item}}"> -->
-                            <div class="card orange lighten-1">
-                                <div class="card-content white-text">
-                                    <span class="card-title">{{item}}</span>
-                                </div>
+        </div>
+        <div class="row" ng-show="hasMatches(tools)">
+            <div ng-repeat="item in tools | filter:searchText">
+                <div class="col s12 m4 l3">
+                    <!-- <A ng-href="#!/skills/{{item}}"> -->
+                        <div class="card orange lighten-1">
+                            <div class="card-content white-text">
+                                <span class="card-title">{{item}}</span>
                             </div>
-                        <!-- </A> -->
-                    </div>
+                        </div>
+                    <!-- </A> -->
                 </div>
             </div>
+        </div>
 
-            <div class="row" ng-show="hasMatches(oss)">
-                <div class="col s12 m9">
-                    <h3 class="light blue-grey-text">Operating Systems</h3>
-                </div>
+        <div class="row" ng-show="hasMatches(oss)">
+            <div class="col s12 m9">
+                <h3 class="light blue-grey-text">Operating Systems</h3>
             </div>
-            <div class="row" ng-show="hasMatches(oss)">
-                <div ng-repeat="item in oss | filter:searchText">
-                    <div class="col s12 m4 l3">
-                        <!-- <A ng-href="#!/skills/{{item}}"> -->
-                            <div class="card red lighten-2">
-                                <div class="card-content white-text">
-                                    <span class="card-title">{{item}}</span>
-                                </div>
+        </div>
+        <div class="row" ng-show="hasMatches(oss)">
+            <div ng-repeat="item in oss | filter:searchText">
+                <div class="col s12 m4 l3">
+                    <!-- <A ng-href="#!/skills/{{item}}"> -->
+                        <div class="card red lighten-2">
+                            <div class="card-content white-text">
+                                <span class="card-title">{{item}}</span>
                             </div>
-                        <!-- </A> -->
-                    </div>
+                        </div>
+                    <!-- </A> -->
                 </div>
             </div>
+        </div>
 
-            <div class="row" ng-show="hasMatches(skills)">
-                <div class="col s12 m9">
-                    <h3 class="light blue-grey-text">Technical Skills</h3>
-                </div>
+        <div class="row" ng-show="hasMatches(skills)">
+            <div class="col s12 m9">
+                <h3 class="light blue-grey-text">Technical Skills</h3>
             </div>
-            <div class="row" ng-show="hasMatches(skills)">
-                <div ng-repeat="item in skills | filter:searchText">
-                    <div class="col s12 m4 l3">
-                        <!-- <A ng-href="#!/skills/{{item}}"> -->
-                            <div class="card purple lighten-2">
-                                <div class="card-content white-text">
-                                    <span class="card-title">{{item}}</span>
-                                </div>
+        </div>
+        <div class="row" ng-show="hasMatches(skills)">
+            <div ng-repeat="item in skills | filter:searchText">
+                <div class="col s12 m4 l3">
+                    <!-- <A ng-href="#!/skills/{{item}}"> -->
+                        <div class="card purple lighten-2">
+                            <div class="card-content white-text">
+                                <span class="card-title">{{item}}</span>
                             </div>
-                        <!-- </A> -->
-                    </div>
+                        </div>
+                    <!-- </A> -->
                 </div>
             </div>
-            <h5 class="slim row center-align blue-grey-text">
-                Seen enough? <a ui-sref="contact" class="teal-text">Contact me.</a>
-            </h5>
+        </div>
+        <h5 class="slim row center-align blue-grey-text">
+            Seen enough? <a ui-sref="contact" class="site-link">Contact me.</a>
+        </h5>
+        <div class="center-align">
+            <h4>
+                <a class="site-link side-padding" href="mailto:amaczugowski@gmail.com"><i class="mdi mdi-mail-ru"></i></a>
+                <a class="site-link side-padding" ng-click="shared.openInTab('http://www.github.com/amaczugowski')"><i class="mdi mdi-github-box"></i></a>
+                <a class="site-link side-padding" ng-click="shared.openInTab('http://www.linkedin.com/in/andrew-maczugowski')"><i class="mdi mdi-linkedin-box"></i></a>
+            </h4>
         </div>
     </div>
 </div>

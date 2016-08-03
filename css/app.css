@@ -24,6 +24,68 @@
     padding: 0;
 }
 
+nav ul a.nav-tab {
+    font-size: 1.05rem !important;
+    padding: 0 50px !important;
+}
+
+nav ul li.active {
+    background-color: rgba(0, 0, 0, 0.15) !important;
+}
+
+.side-nav a {
+    padding-left: 30px !important;
+    font-size: 18px !important;
+    font-weight: 300 !important;
+}
+
+.side-nav li.active {
+    background-color: rgba(0, 0, 0, 0.2) !important;
+}
+
+@media screen and (max-width: 600px) {
+    .side-nav {
+        top: 56px !important;
+    }
+}
+@media screen and (min-width: 601px) {
+    .side-nav {
+        top: 64px !important;
+    }
+}
+
+.developer {
+    padding-top: 12vh;
+}
+@media screen and (min-width: 993px) {
+    .developer {
+        padding-top: 24vh;
+        font-size: 80px;
+    }
+}
+@media screen and (min-width: 601px) {
+    @media screen and (max-width: 992px) {
+        .developer {
+            font-size: 70px;
+            padding-bottom: 3vh
+        }
+    }
+}
+
+.side-padding {
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+@media screen and (max-width: 360px) {
+    nav .brand-logo {
+        font-size: 1.7rem !important;
+    }
+    .side-nav {
+        width: 225px !important;
+    }
+}
+
 .logo-padding {
     padding-left: 10px !important;
     padding-right: 10px !important;
@@ -66,7 +128,12 @@
     transition: all .5s ease;
 }
 
+.site-link i {
+
+}
+
 .site-link {
+    color: rgb(255, 153, 0);
     -webkit-transition: all .5s ease;
     transition: all .5s ease;
 }
