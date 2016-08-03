@@ -113,6 +113,10 @@ input:focus {
     color: teal !important;
 }
 
+.prefix {
+    padding-top: 15px;
+}
+
 ::-webkit-input-placeholder {
     color: grey !important;
 }

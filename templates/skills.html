@@ -6,7 +6,7 @@
                 <div class="col s12 m9">
                     <h1 class="header center-on-small-only light">Skills</h1>
                     <div class="input-field grey-text text-darken-3">
-                        <input type="text" placeholder="search for skills" ng-model="searchText">
+                        <i class="material-icons prefix">search</i><input type="text" placeholder="search for skills" ng-model="searchText">
                     </div>
                 </div>
             </div>
@@ -20,13 +20,13 @@
             <div class="row" ng-show="hasMatches(languages)">
                 <div ng-repeat="item in languages | filter:searchText">
                     <div class="col s12 m4 l3">
-                        <A ng-href="#!/skills/{{item}}">
+                        <!-- <A ng-href="#!/skills/{{item}}"> -->
                             <div class="card blue lighten-2">
                                 <div class="card-content white-text">
                                     <span class="card-title">{{item}}</span>
                                 </div>
                             </div>
-                        </A>
+                        <!-- </A> -->
                     </div>
                 </div>
             </div>
@@ -39,13 +39,13 @@
             <div class="row" ng-show="hasMatches(frameworks)">
                 <div ng-repeat="item in frameworks | filter:searchText">
                     <div class="col s12 m4 l3">
-                        <A ng-href="#!/skills/{{item}}">
+                        <!-- <A ng-href="#!/skills/{{item}}"> -->
                             <div class="card green lighten-2">
                                 <div class="card-content white-text">
                                     <span class="card-title">{{item}}</span>
                                 </div>
                             </div>
-                        </A>
+                        <!-- </A> -->
                     </div>
                 </div>
             </div>
@@ -58,13 +58,13 @@
             <div class="row" ng-show="hasMatches(tools)">
                 <div ng-repeat="item in tools | filter:searchText">
                     <div class="col s12 m4 l3">
-                        <A ng-href="#!/skills/{{item}}">
+                        <!-- <A ng-href="#!/skills/{{item}}"> -->
                             <div class="card orange lighten-1">
                                 <div class="card-content white-text">
                                     <span class="card-title">{{item}}</span>
                                 </div>
                             </div>
-                        </A>
+                        <!-- </A> -->
                     </div>
                 </div>
             </div>
@@ -77,13 +77,13 @@
             <div class="row" ng-show="hasMatches(oss)">
                 <div ng-repeat="item in oss | filter:searchText">
                     <div class="col s12 m4 l3">
-                        <A ng-href="#!/skills/{{item}}">
+                        <!-- <A ng-href="#!/skills/{{item}}"> -->
                             <div class="card red lighten-2">
                                 <div class="card-content white-text">
                                     <span class="card-title">{{item}}</span>
                                 </div>
                             </div>
-                        </A>
+                        <!-- </A> -->
                     </div>
                 </div>
             </div>
@@ -96,13 +96,13 @@
             <div class="row" ng-show="hasMatches(skills)">
                 <div ng-repeat="item in skills | filter:searchText">
                     <div class="col s12 m4 l3">
-                        <A ng-href="#!/skills/{{item}}">
+                        <!-- <A ng-href="#!/skills/{{item}}"> -->
                             <div class="card purple lighten-2">
                                 <div class="card-content white-text">
                                     <span class="card-title">{{item}}</span>
                                 </div>
                             </div>
-                        </A>
+                        <!-- </A> -->
                     </div>
                 </div>
             </div>
