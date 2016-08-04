@@ -30,7 +30,7 @@ nav ul a.nav-tab {
 }
 
 nav ul li.active {
-    background-color: rgba(0, 0, 0, 0.15) !important;
+    background-color: rgba(0, 0, 0, 0.2) !important;
 }
 
 .side-nav a {
@@ -119,13 +119,8 @@ nav ul li.active {
     opacity: 0;
 }
 
-.back-button.ng-hide {
-    opacity: 0;
-}
-.back-button.ng-hide-remove,
-.back-button.ng-hide-add {
-    -webkit-transition: all .5s ease;
-    transition: all .5s ease;
+.btn-large:hover {
+    background-color: #2582c1 !important;
 }
 
 @media screen and (max-width: 600px) {
