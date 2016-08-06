@@ -132,6 +132,14 @@ nav ul li.active {
     background-color: #2582c1 !important;
 }
 
+p.slim {
+    font-size: 20px !important;
+}
+@media screen and (min-width: 993px) {
+    p.slim {
+        font-size: 22px !important;
+    }
+}
 @media screen and (max-width: 600px) {
     p {
         font-size: 20px !important;
