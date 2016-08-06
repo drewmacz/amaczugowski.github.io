@@ -77,7 +77,11 @@ nav ul li.active {
     padding-right: 6px;
 }
 
-@media screen and (max-width: 360px) {
+.side-nav {
+    width: 260px !important;
+}
+
+@media screen and (max-width: 365px) {
     nav .brand-logo {
         font-size: 1.7rem !important;
     }
@@ -89,6 +93,11 @@ nav ul li.active {
 .logo-padding {
     padding-left: 10px !important;
     padding-right: 10px !important;
+}
+@media screen and (max-width: 400px) {
+    .logo-padding {
+        padding-left: 25px !important;
+    }
 }
 
 .dark-grey-text {
@@ -125,7 +134,7 @@ nav ul li.active {
 
 @media screen and (max-width: 600px) {
     p {
-        font-size: 18px !important;
+        font-size: 20px !important;
     }
 }
 
