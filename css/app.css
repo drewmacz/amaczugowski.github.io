@@ -144,6 +144,9 @@ p.slim {
     p {
         font-size: 20px !important;
     }
+    p.slim {
+        font-size: 18px !important;
+    }
     p.smaller-text {
         font-size: 18px !important;
     }
