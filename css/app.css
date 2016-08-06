@@ -136,6 +136,9 @@ nav ul li.active {
     p {
         font-size: 20px !important;
     }
+    p.smaller-text {
+        font-size: 18px !important;
+    }
 }
 
 .no-bottom-margin {
