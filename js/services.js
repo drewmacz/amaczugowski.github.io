@@ -54,14 +54,81 @@ app.factory('skillsList', function() {
     var data = {};
 
     data.languages = ['Java', 'Javascript', 'Python', 'Groovy', 'C', 'C#', 'MatLab', 'Lua', 'CSS', 'HTML'];
-    data.frameworks = ['AngularJS', 'Node.js', 'Express', 'Grails', 'Foundation', 'Materialize', 'Mongoose'];
-    data.tools = ['Eclipse', 'IntelliJ', 'Visual Studio', 'Xcode', 'Android Studio', 'Sublime', 'Atom', 'Nodepad++', 'GNU', 'Vim', 'NPM', 'Bower', 'Gradle', 'Gulp', 'MongoDB', 'PuTTY'];
-    data.oss = ['Android', 'OS X', 'Windows 7', 'Windows 8', 'Windows 10', 'Linux', 'Redhat', 'CentOS', 'Debian', 'Ubuntu'];
+    data.frameworks = ['AngularJS', 'Node.js', 'Express', 'Socket.IO', 'Mongoose', 'jQuery', 'Grails', 'Bootstrap', 'Foundation', 'Materialize', 'Ionic', 'Cordova'];
+    data.tools = ['Eclipse', 'IntelliJ', 'Visual Studio', 'Xcode', 'Android Studio', 'Sublime', 'Atom', 'Nodepad++', 'GNU', 'Vim', 'PuTTY', 'NPM', 'Bower', 'Gradle', 'Gulp', 'MongoDB', 'Firebase', 'Google Maps API'];
+    data.oss = ['Android', 'OS X', 'Windows', 'Linux', 'Redhat', 'CentOS', 'Debian', 'Ubuntu'];
     data.skills = ['JUnit', 'REST API', 'Git', 'Version Control', 'GitHub', 'GitLab', 'JSON', 'XML', 'UML', 'Object Oriented Principles (OOP)', 'Object Oriented Design (OOD)', 'MEAN Stack Development', 'Full Stack Development', 'Agile'];
 
     return data;
 });
 
 app.factory('projectsList', function() {
+    var data = {};
 
+    data.projects = [
+        {
+            title: 'Socket Chat',
+            description: 'An instant messaging application created from scratch to become familiar with Socket.IO.',
+            image: './assets/socket-chat.png',
+            tags: [
+                'Personal',
+                'Socket.IO',
+                'Node.js',
+                'Express',
+                'AngularJS',
+                'Materialize',
+                'Javascript',
+                'HTML',
+                'CSS'
+            ],
+            url: 'http://github.com/amaczugowski/socket-chat/'
+        },
+        {
+            title: 'Rights App',
+            description: 'Application for iOS and Android using Ionic framework to help users learn their rights.',
+            image: './assets/rights.png',
+            tags: [
+                'Personal',
+                'Ionic',
+                'AngularJS',
+                'Javascript',
+                'HTML',
+                'CSS'
+            ],
+            url: 'http://github.com/amaczugowski/rights/'
+        },
+        {
+            title: 'iMap App',
+            description: 'Cross-platform mobile app with Firebase and the Google Maps API to share locations between users.',
+            image: './assets/imap.png',
+            tags: [
+                'Personal',
+                'Ionic',
+                'Firebase',
+                'Google Maps API',
+                'AngularJS',
+                'Javascript',
+                'HTML',
+                'CSS'
+            ],
+            url: 'http://github.com/amaczugowski/rights/'
+        },
+        {
+            title: 'Harris Project Server',
+            description: 'Web based tool for Harris Corporation to be utilized by multidisciplinary user base to digitalize tracking of company savings. Project consisted of frontend AngularJS webpage and a Node.js server to track submitted projects. Assumed leading role on project architecture to meet requirements on schedule and within budget. Created by a team of 2.',
+            tags: [
+                'Work',
+                'Node.js',
+                'Express',
+                'AngularJS',
+                'Foundation',
+                'Javascript',
+                'HTML',
+                'CSS'
+            ],
+            url: 'http://github.com/amaczugowski/node-project-server'
+        }
+    ];
+
+    return data;
 });
