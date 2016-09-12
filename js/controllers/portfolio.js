@@ -23,7 +23,8 @@ app.controller('portfolioCtrl', function($scope, shared, projectsList) {
 
     $scope.searchTag = function(tag) {
         $scope.searchText = tag;
+        Materialize.toast('Showing ' + tag + ' projects', 1000);
     };
 
-    $scope.pageInit()
+    $scope.pageInit();
 });
