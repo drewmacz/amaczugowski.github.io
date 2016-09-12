@@ -124,6 +124,7 @@ app.factory('projectsList', function() {
                 'Express',
                 'MongoDB',
                 'Mongoose',
+                'REST API',
                 'AngularJS',
                 'Foundation',
                 'Javascript',
