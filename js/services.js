@@ -90,6 +90,7 @@ app.factory('projectsList', function() {
             tags: [
                 'Personal',
                 'Ionic',
+                'Cordova',
                 'AngularJS',
                 'Javascript',
                 'HTML',
@@ -104,6 +105,7 @@ app.factory('projectsList', function() {
             tags: [
                 'Personal',
                 'Ionic',
+                'Cordova',
                 'Firebase',
                 'Google Maps API',
                 'AngularJS',
@@ -120,6 +122,8 @@ app.factory('projectsList', function() {
                 'Work',
                 'Node.js',
                 'Express',
+                'MongoDB',
+                'Mongoose',
                 'AngularJS',
                 'Foundation',
                 'Javascript',
