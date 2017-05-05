@@ -55,8 +55,8 @@ app.factory('skillsList', function() {
 
     data.languages = ['Java', 'Javascript', 'Python', 'Groovy', 'C', 'C#', 'MatLab', 'Lua', 'CSS', 'HTML'];
     data.frameworks = ['AngularJS', 'Node.js', 'Express', 'Socket.IO', 'Mongoose', 'jQuery', 'Grails', 'Bootstrap', 'Foundation', 'Materialize', 'Ionic', 'Cordova'];
-    data.tools = ['Eclipse', 'IntelliJ', 'Visual Studio', 'Xcode', 'Android Studio', 'Sublime', 'Atom', 'Nodepad++', 'GNU', 'Vim', 'PuTTY', 'NPM', 'Bower', 'Gradle', 'Gulp', 'MongoDB', 'Firebase', 'Google Maps API'];
-    data.oss = ['Android', 'OS X', 'Windows', 'Linux', 'Redhat', 'CentOS', 'Debian', 'Ubuntu'];
+    data.tools = ['Unity', 'Eclipse', 'IntelliJ', 'Visual Studio', 'Xcode', 'Android Studio', 'Sublime', 'Atom', 'Nodepad++', 'GNU', 'Vim', 'PuTTY', 'NPM', 'Bower', 'Gradle', 'Gulp', 'MongoDB', 'Firebase', 'Google Maps API'];
+    data.oss = ['Hololens', 'Android', 'OS X', 'Windows', 'Linux', 'Redhat', 'CentOS', 'Debian', 'Ubuntu'];
     data.skills = ['JUnit', 'REST API', 'Git', 'Version Control', 'GitHub', 'GitLab', 'JSON', 'XML', 'UML', 'Object Oriented Principles (OOP)', 'Object Oriented Design (OOD)', 'MEAN Stack Development', 'Full Stack Development', 'Agile'];
 
     return data;
@@ -66,6 +66,17 @@ app.factory('projectsList', function() {
     var data = {};
 
     data.projects = [
+        {
+            title: 'HUD for First Responders',
+            description: 'A heads-up display developed to work on Microsoft Hololens that aims to help first responders in the field. This project was part of my undergraduate research that was created to study how users interact with augmented reality interfaces, and in particular, how these interfaces can help first responders in emergency situations. This research won first place at the ISE Research Symposium at Virginia Tech. I worked on a team of nine undergraduates for this project.',
+            tags: [
+                'Research',
+                'Hololens',
+                'Unity',
+                'C#'
+            ],
+            url: ''
+        },
         {
             title: 'Socket Chat',
             description: 'An instant messaging application created from scratch to become familiar with Socket.IO.',

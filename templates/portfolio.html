@@ -2,7 +2,7 @@
     <div class="container">
         <!-- Header and Search Box -->
         <div class="row">
-            <div class="col s12 m9">
+            <div class="col s12 m9 offset-m1">
                 <h1 class="header center-on-small-only light">Portfolio</h1>
                 <div class="input-field">
                     <i class="material-icons prefix">search</i><input type="text" placeholder="search for projects by tag" ng-model="searchText">
@@ -27,7 +27,7 @@
                             <div class="card-action">
                                 Tags:&emsp;<a class="site-link-2" ng-repeat="tag in project.tags" ng-click="searchTag(tag)">{{tag}}&emsp;</a>
                             </div>
-                            <div class="card-action">
+                            <div class="card-action" ng-hide="project.url == ''">
                                 <a class="site-link" ng-href="{{project.url}}">source code</a>
                             </div>
                         </div>
