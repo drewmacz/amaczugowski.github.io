@@ -68,7 +68,7 @@ app.factory('projectsList', function() {
     data.projects = [
         {
             title: 'HUD for First Responders',
-            description: 'A heads-up display developed to work on Microsoft Hololens that aims to help first responders in the field. This project was part of my undergraduate research that was created to study how users interact with augmented reality interfaces, and in particular, how these interfaces can help first responders in emergency situations. This research won first place at the ISE Research Symposium at Virginia Tech. I worked on a team of nine undergraduates for this project.',
+            description: 'A heads-up display developed to work on Microsoft Hololens that aims to help first responders in the field. This project was part of my undergraduate research, where I worked on a team of nine students. The goal of this project was to study how users interact with augmented reality interfaces, and in particular, how these interfaces can help first responders in emergency situations. This research won first place at the 2017 ISE Research Symposium at Virginia Tech.',
             tags: [
                 'Research',
                 'Hololens',
