@@ -76,6 +76,9 @@
                         <a class="nav-tab waves-effect" ui-sref="skills">skills</a>
                     </li>
                     <li>
+                        <a class="nav-tab waves-effect" href="./Andrew_Maczugowski_Resume_September_2017.pdf" target="_blank">resume</a>
+                    </li>
+                    <li>
                         <a ng-click="shared.go('contact')" class="waves-effect waves-light btn-large medium-blue">Contact</a>
                     </li>
                 </ul>
@@ -88,6 +91,12 @@
                     </li>
                     <li ng-class="{coral:shared.skills}">
                         <a class="white-text waves-effect" ng-click="closeSideNav('skills')">skills</a>
+                    </li>
+                    <li>
+                        <a class="white-text waves-effect"
+                           href="./Andrew_Maczugowski_Resume_September_2017.pdf"
+                           target="_blank"
+                           ng-click="closeSideNav()">resume</a>
                     </li>
                     <li ng-class="{coral:shared.contact}">
                         <a class="white-text waves-effect" ng-click="closeSideNav('contact')">contact</a>

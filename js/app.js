@@ -44,6 +44,8 @@ app.controller('myAppCtrl', function($scope, shared) {
 
     $scope.closeSideNav = function(state) {
         $('.button-collapse').sideNav('hide');
-        shared.waitAndGo(state, 150);
+        if (state) {
+            shared.waitAndGo(state, 150);
+        }
     };
 });

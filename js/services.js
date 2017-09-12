@@ -53,11 +53,11 @@ app.factory('shared', function($window, $state, $timeout, $filter) {
 app.factory('skillsList', function() {
     var data = {};
 
-    data.languages = ['Java', 'Javascript', 'Python', 'Groovy', 'C', 'C#', 'MatLab', 'Lua', 'CSS', 'HTML'];
-    data.frameworks = ['AngularJS', 'Node.js', 'Express', 'Socket.IO', 'Mongoose', 'jQuery', 'Grails', 'Bootstrap', 'Foundation', 'Materialize', 'Ionic', 'Cordova'];
-    data.tools = ['Unity', 'Eclipse', 'IntelliJ', 'Visual Studio', 'Xcode', 'Android Studio', 'Sublime', 'Atom', 'Nodepad++', 'GNU', 'Vim', 'PuTTY', 'NPM', 'Bower', 'Gradle', 'Gulp', 'MongoDB', 'Firebase', 'Google Maps API'];
-    data.oss = ['Hololens', 'Android', 'OS X', 'Windows', 'Linux', 'Redhat', 'CentOS', 'Debian', 'Ubuntu'];
-    data.skills = ['JUnit', 'REST API', 'Git', 'Version Control', 'GitHub', 'GitLab', 'JSON', 'XML', 'UML', 'Object Oriented Principles (OOP)', 'Object Oriented Design (OOD)', 'MEAN Stack Development', 'Full Stack Development', 'Agile'];
+    data.languages = ['Java', 'Javascript', 'Python', 'Go', 'Kotlin', 'Groovy', 'C', 'C#', 'MatLab', 'Lua', 'SCSS', 'CSS', 'HTML'];
+    data.frameworks = ['Angular', 'Node.js', 'Express', 'Socket.IO', 'Mongoose', 'jQuery', 'Spring', 'NumPy', 'SciPy', 'OpenCV', 'Grails', 'Bootstrap', 'Foundation', 'Materialize', 'Ionic', 'Cordova', 'Cucumber'];
+    data.tools = ['Unity', 'NPM', 'Nginx', 'Webpack', 'Bower', 'Maven', 'Gulp', 'MongoDB', 'Firebase', 'Google Maps API'];
+    data.oss = ['Hololens', 'Android', 'MacOS', 'Windows', 'Linux', 'Redhat', 'CentOS', 'Debian', 'Ubuntu'];
+    data.skills = ['API Development', 'REST', 'Unit Testing', 'Git', 'Version Control', 'GitHub', 'GitLab', 'UML', 'Agile', 'Algorithm Analysis', 'Object Oriented Principles (OOP)', 'Object Oriented Design (OOD)', 'MEAN Stack Development', 'Full Stack Development'];
 
     return data;
 });
@@ -142,7 +142,7 @@ app.factory('projectsList', function() {
                 'HTML',
                 'CSS'
             ],
-            url: 'http://github.com/amaczugowski/node-project-server'
+            url: ''
         }
     ];
 
